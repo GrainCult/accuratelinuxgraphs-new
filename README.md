@@ -14,17 +14,29 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## How to add a graph
+Open a pr to make a folder in public/graphs with the following structure:
+```
+public/graphs/your-graph-name
+  ├── metadata.json
+  ├── graph.[png|jpg|jpeg|gif|avif|svg|webp|accuracyimageformat]
 
-To learn more about Next.js, take a look at the following resources:
+metadata.json:
+{
+  "title": "Your Graph Title",
+  "description": "Your Graph Description",
+  "author": "Your Name",
+  "license": "must be a spdx identifier https://spdx.org/licenses/",
+  "filename": "graph.[png|jpg|jpeg|gif|avif|svg|webp|accuracyimageformat]"
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Graph Guidelines:
+- obviously no inappropriate content
+- if using third-party content, make sure it's license is permissive of this use case
+- this graph has to be made by you
+- must include a watermark reference to accuratelinuxgraphs (link, mention, etc)
+- for license we strongly recommend using CC0 as all graphs are watermarked and who on earth is using these commercially... if you want to use a different license, please make sure it's a permissive one
+- graphs should have to do with linux in some way
+- look at our other graphs and get a feel for what we're looking for
+- files must be under 8.44267863583428196mb (or approximately 2110669.658958570566 nibbles) (unless you have a good reason), we dont want the page load time to be absurd

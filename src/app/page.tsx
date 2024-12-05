@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-      <div className="main-content">
+      <div className="main-content bg-[url('../../public/img/tux.gif')]">
         <Graphs></Graphs>
         <Badges></Badges>
       </div>
